@@ -1,5 +1,6 @@
 package com.horizon.terry.stick;
 
+import com.horizon.terry.stick.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,5 +20,6 @@ public class Stick implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Magic world!");
+		ModItems.registerModItems();
 	}
 }
