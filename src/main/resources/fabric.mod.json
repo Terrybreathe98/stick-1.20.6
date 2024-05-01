@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stick",
+	"version": "${version}",
+	"name": "stick",
+	"description": "I'm still not sure why I'm gonna to develope this mod,but there it is,so I'm gonna give it a try.As for the result?Who knows?Who cares!",
+	"authors": [
+		"TerryHorizon98 from China"
+	],
+	"contact": {
+		"homepage": "https://space.bilibili.com/694181921",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stick/trueicon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.horizon.terry.stick.Stick"
+		],
+		"client": [
+			"com.horizon.terry.stick.StickClient"
+		],
+		"fabric-datagen": [
+			"com.horizon.terry.stick.StickDataGenerator"
+		]
+	},
+	"mixins": [
+		"stick.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
