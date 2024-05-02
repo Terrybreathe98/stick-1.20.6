@@ -10,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    private static ItemGroup STICK = FabricItemGroup.builder()
+    private static final ItemGroup STICK = FabricItemGroup.builder()
             .displayName(Text.translatable("itemgroup.stick.wand"))
             .icon(() -> new ItemStack(ModItems.WAND))
             .build();
