@@ -18,10 +18,10 @@ public class ModItems {
         //将物品注册
         Item registriedItem = Registry.register(Registries.ITEM, new Identifier(Stick.MOD_ID,name),item);
         //将物品加入物品栏
-        /*for(ItemGroup itemGroup: itemGroups) {
+        for(ItemGroup itemGroup: itemGroups) {
             RegistryKey<ItemGroup> itemGroupKey = RegistryKey.of((RegistryKey<? extends Registry<ItemGroup>>) Registries.REGISTRIES, new Identifier(name));
             ItemGroupEvents.modifyEntriesEvent(itemGroupKey).register(entries -> entries.add(registriedItem));
-        }*/
+        }
 
         return registriedItem;
     }
